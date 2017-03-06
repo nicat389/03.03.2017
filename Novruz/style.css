@@ -1,0 +1,51 @@
+.novruz{
+    text-align: center;
+    margin-top: 3%;
+}
+
+.clear{
+    clear: both;
+}
+
+p{
+    line-height: 0;
+    padding: 10px;
+    font-size: 20px;
+    color: darkred;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+ul{
+    margin-top: 3%;
+    
+  
+  
+}
+
+ul>li{
+    display: inline;
+    list-style: none;
+     background: #F0B204;
+   padding: 20px;
+  font-family: Calibri;
+  font-size: 20px;
+  color: white;
+  
+}
+
+ul>li:first-child, ul>li:nth-child(2),ul>li:nth-child(3){
+    border-right: 1px solid white;
+}
+
+ul>li:first-child{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+}
+
+ul>li:last-child{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}

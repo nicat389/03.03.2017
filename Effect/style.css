@@ -1,0 +1,40 @@
+.clear{
+    clear: both;
+}
+
+img{
+    float: left;
+}
+form{
+    margin-top: 10px;
+    float: left;
+}
+
+button{
+   margin-left: calc(22%);
+  
+}
+
+button{
+    width: 100px;
+    padding: 10px;
+    background: turquoise;
+    border: 1px solid white;
+    border-radius: 2px;
+    color: white;
+}
+
+button:nth-child(n+2){
+    margin-top: 10px;
+}
+
+
+.none, .brightness, .contrast, .drop_shadow, .grayscale, .hue-rotate, .invert, .opacity, .sepia{
+    float: left;
+    width: 450px;
+}
+
+.range{
+    margin-top: 10px;
+
+}
