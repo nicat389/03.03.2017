@@ -1,0 +1,29 @@
+.main{
+    width: 960px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+img{
+ width: 120px;
+ height: 100px;
+ position: relative;
+ top: 500px;
+ margin-left: 10px;
+
+}
+
+button{
+    height: 50px;
+    width: 120px;
+    position: relative;
+ top: 500px;
+
+ margin-left: 10px;
+
+    
+}

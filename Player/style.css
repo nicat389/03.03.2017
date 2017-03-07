@@ -1,0 +1,37 @@
+.left{
+    float: left;
+}
+
+
+
+audio{
+      margin-left: 2%;
+}
+
+ul{
+  margin:0;
+  background: turquoise;
+
+  border-radius: 2px;
+}
+
+ul>li{
+    list-style: none;
+    padding: 10px;
+ 
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  
+}
+
+ul>li:first-child,ul>li:nth-child(2), ul>li:nth-child(3), ul>li:nth-child(4){
+    border-bottom: 1px solid white;
+}
+
+
+
+ul>li:hover{
+    color: dodgerblue;
+    transition: .9s;
+}
