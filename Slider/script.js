@@ -3,35 +3,49 @@ var arr=[
     "img/2.jpg",
     "img/3.jpg"
 ]
-
-
-
-document.getElementsByTagName("body")[0].style.background="url("+arr[0]+")";
+m=document.getElementsByTagName("body")[0];
+m.style.background="url("+arr[0]+")";
 document.getElementsByTagName("body")[0].style.backgroundRepeat="no-repeat";
 document.getElementsByTagName("body")[0].style.backgroundSize="cover";
-document.getElementsByTagName("body")[0].id=0;
-
+m.id=0;
 
 for(i=0;i<arr.length;i++){
-    document.getElementsByTagName("img")[i].id=i+10;;
-     
+    document.getElementsByTagName("img")[i].className=i;
 }
 
 function previous(){
+    k=parseInt(m.id)-1;
+    if(k<0) {
+    k=arr.length-1;
+    m.style.background="url("+arr[k]+")";
+    }
 
+   else
+     m.style.background="url("+arr[k]+")";
+     m.id=k;
+     document.getElementsByTagName("body")[0].style.backgroundRepeat="no-repeat";
+document.getElementsByTagName("body")[0].style.backgroundSize="cover";
 }
 
 function next(){
-    k=parseInt(document.getElementsByTagName("body")[0].id+1);
-console.log(k);
-   document.getElementsByTagName("body")[0].style.background="url('img/"+kW+".jpg')";
-   
+    k=parseInt(m.id)+1;
+    if(k>=arr.length) {
+    k=0;
+    m.style.background="url("+arr[k]+")";
+
+    }
+
+   else
+     m.style.background="url("+arr[k]+")";
+     m.id=k;
+     document.getElementsByTagName("body")[0].style.backgroundRepeat="no-repeat";
+document.getElementsByTagName("body")[0].style.backgroundSize="cover";
 }
 
 function pic(a){
-document.getElementsByTagName("body")[0].style.background="url("+arr[a.id-10]+")";
+m.style.background="url("+arr[a.className]+")";
+m.id=a.className
 document.getElementsByTagName("body")[0].style.backgroundRepeat="no-repeat";
 document.getElementsByTagName("body")[0].style.backgroundSize="cover";
-document.getElementsByTagName("body")[0].id=a.id-10;
-
 }
+
