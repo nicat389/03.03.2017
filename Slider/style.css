@@ -1,3 +1,7 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .main{
     width: 960px;
     height: auto;
@@ -14,16 +18,31 @@ img{
  position: relative;
  top: 500px;
  margin-left: 10px;
+ border-radius: 2px;
+}
 
+img:hover{
+    border: 2px solid white;
+    box-sizing: border-box;
 }
 
 button{
     height: 50px;
-    width: 120px;
+    width: 130px;
     position: relative;
  top: 500px;
-
+ background: darkgoldenrod;
+ border: 1px solid white;
+ border-radius: 3px;
  margin-left: 10px;
-
+color: white;
+font-weight: bold;
+font-family: Calibri;
+font-size: 16px;
     
+}
+
+button:hover{
+    background: turquoise;
+    transition: 1s;
 }
